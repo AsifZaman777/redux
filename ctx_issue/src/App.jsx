@@ -2,6 +2,7 @@ import React from 'react';
 import CounterProvider from './context/counterContext';
 import ComponentA from './component/componentA';
 import ComponentB from './component/componentB';
+import ComponentC from './component/componentC';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <ComponentA />
                     <ComponentB />
+                    <ComponentC />
                 </div>
             </div>
         </CounterProvider>
