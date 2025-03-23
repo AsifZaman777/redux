@@ -1,10 +1,12 @@
 import React from 'react';
 import ComponentA from './component/componentA';
 import ComponentB from './component/componentB';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 const App = () => {
     return (
- 
+          <Provider store={store}>
             <div className="bg-gray-100 p-5 text-center min-h-screen">
                 <h1 className="bg-slate-300 m-5 p-2 rounded shadow text-2xl font-semibold">
                     Solution of rerender issue using Redux
@@ -14,7 +16,8 @@ const App = () => {
                     <ComponentB />
                 </div>
             </div>
- 
+            </Provider>
+
     );
 };
 
