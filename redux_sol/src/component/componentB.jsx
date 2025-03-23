@@ -11,6 +11,12 @@ const componentB = () => {
             >
                 Increment Counter
             </button>
+            <button
+                onClick=''
+                className="bg-red-500 rounded text-white hover:bg-green-600 mt-2 px-4 py-2 transition ml-2"
+            >
+                Decrement Counter
+            </button>
         </div>
     );
 };
